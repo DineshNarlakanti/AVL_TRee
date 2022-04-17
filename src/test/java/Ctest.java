@@ -47,7 +47,7 @@ public class Ctest {
         aVLTree0.insert(395);
         aVLTree0.getBalance(aVLTree_Node0);
       }
-      catch(NullPointerException ignored){
+      catch(NullPointerException ne){
         fail("fail");
 
         }
