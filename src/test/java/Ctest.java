@@ -24,6 +24,7 @@ public class Ctest {
 
     @Test(timeout = 4000)
     public void test024() throws Throwable {
+        try{
         AVLTree aVLTree0 = new AVLTree();
         aVLTree0.insert((-3240));
         aVLTree0.insert(1779);
@@ -45,6 +46,10 @@ public class Ctest {
         aVLTree_Node0.key = (-796);
         aVLTree0.insert(395);
         aVLTree0.getBalance(aVLTree_Node0);
+        }
+        catch{
+        fail("null pointer");
+        }
     }
 
     @Test(timeout = 4000)
