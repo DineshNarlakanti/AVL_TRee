@@ -3,9 +3,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
 
-public class CustomTest {
+public class Ctest {
     @Test(timeout = 4000)
-    public void test1() throws Throwable {
+    public void test2() throws Throwable {
         AVLTree aVLTree0 = new AVLTree();
         AVLTree.Node node2 = aVLTree0.find((int) '5');
         AVLTree.Node node3 = aVLTree0.getRoot();
@@ -23,7 +23,7 @@ public class CustomTest {
     }
 
     @Test(timeout = 4000)
-    public void test00() throws Throwable {
+    public void test024() throws Throwable {
         AVLTree aVLTree0 = new AVLTree();
         aVLTree0.insert((-3240));
         aVLTree0.insert(1779);
@@ -48,7 +48,7 @@ public class CustomTest {
     }
 
     @Test(timeout = 4000)
-    public void test009() throws Throwable {
+    public void test03() throws Throwable {
         AVLTree aVLTree0 = new AVLTree();
         aVLTree0.insert(12);
         aVLTree0.insert(56);
