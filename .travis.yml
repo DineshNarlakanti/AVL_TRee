@@ -3,6 +3,7 @@ language: java
 sudo: false
 
 script:
+  - mvn test -DTest = "Ctest" 
   - mvn clean
   - mvn evosuite:generate
   - mvn evosuite:export
