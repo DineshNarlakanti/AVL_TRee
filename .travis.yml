@@ -2,20 +2,14 @@ language: java
 
 sudo: false
 
-<<<<<<<<< Temporary merge branch 1
-script: "mvn cobertura:cobertura"
-  - mvn test
-  - mvn evosuite:info
-=========
 script:
+  - mvn clean
+  - mvn evosuite:generate
+  - mvn evosuite:export
   - mvn test
-  - mvn evosuite:info
   - "mvn cobertura:cobertura"
-
->>>>>>>>> Temporary merge branch 2
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-
 jdk:
   - oraclejdk8
 
